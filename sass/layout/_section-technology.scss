@@ -1,0 +1,27 @@
+.list-of-technologys {
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.list-item {
+  position: relative;
+  width: 33%;
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  &:hover {
+    transform: rotateX(360deg);
+  }
+  @include breakpoint(phone) {
+    width: 50%;
+  }
+}
+.pre-animation-item {
+  opacity: 0;
+  top: -150vw;
+  transform: rotate(180deg);
+}
+.header-technology {
+  width: 100%;
+}

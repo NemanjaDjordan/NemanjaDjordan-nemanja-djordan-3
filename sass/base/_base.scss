@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  color: $white;
+  background-color: $black;
+  cursor: url('../../assets/images/cursor.png'), auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+.loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  visibility: hidden;
+}
+.sections {
+  position: relative;
+  min-height: 80%;
+}
+.wrapper {
+  max-width: 1140px;
+  width: calc(100% - 40px);
+  margin: auto;
+}

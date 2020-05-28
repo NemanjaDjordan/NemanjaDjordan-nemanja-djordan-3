@@ -1,0 +1,18 @@
+.section-intro {
+  padding: 10vh 0;
+  overflow: hidden;
+}
+.horizontal-right {
+  @include horizontal-left-right;
+  margin: 0 0 20px -30vw;
+}
+.horizontal-left {
+  @include horizontal-left-right;
+  margin: 0 0 20px 30vw;
+}
+.horizontal-right,
+.horizontal-left {
+  @include breakpoint(tablet) {
+    margin: 0 0 20px 5vw;
+  }
+}

@@ -1,0 +1,163 @@
+.navbar-item {
+  @include cursor-hover;
+  font-weight: 700;
+  .top {
+    position: relative;
+    top: 7px;
+  }
+  .bottom {
+    position: relative;
+    top: -11px;
+  }
+  &:hover {
+    .simple-wrap-bottom {
+      border-top: 1px solid $red;
+      right: -2px;
+      top: -1px;
+    }
+    .simple-wrap-top {
+      right: 2px;
+    }
+  }
+}
+.navbar-item:nth-child(even) {
+  transition: 0.5s ease;
+  position: relative;
+  left: -150vh;
+  bottom: 150vh;
+}
+.navbar-item:nth-child(odd) {
+  transition: 0.5s ease;
+  position: relative;
+  right: -150vh;
+  bottom: 150vh;
+}
+.active {
+  .iner-circle,
+  .buffer {
+    transition: 1s linear;
+  }
+  .iner-circle {
+    margin: -1px 0 0 -1px;
+    height: 48px;
+    width: 48px;
+  }
+  .buffer {
+    width: 100%;
+  }
+}
+.navbar-active {
+  .navbar-item {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .nav-slide-down {
+    top: 0;
+  }
+}
+.section-intro-animation {
+  .horizontal-right,
+  .horizontal-left {
+    transition: 1s ease-in;
+    margin: 0 0 20px 5vw;
+  }
+}
+.burger-pre-animation {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in;
+  .first {
+    transform: rotate(0deg);
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in;
+  }
+  .second {
+    transform: rotate(0deg);
+    top: 0;
+    left: -0;
+    transition: 0.3s ease-in;
+  }
+  .third {
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  .fourth {
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  .fifth {
+    transform: rotate(0deg);
+    top: -0;
+    left: 0;
+    transition: 0.3s ease-in;
+  }
+  .sixth {
+    transform: rotate(0deg);
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in;
+  }
+}
+.burger-animation {
+  .burger {
+    top: 33px;
+    height: 40px;
+    transform: rotate(360deg);
+    transition: 0.5s ease-in;
+    @include breakpoint(phone) {
+      right: 15px;
+      top: 20px;
+    }
+  }
+  .first {
+    transform: rotate(45deg);
+    top: 14px;
+    left: 4px;
+    transition: 0.5s ease-in;
+  }
+  .second {
+    transform: rotate(-45deg);
+    top: 14px;
+    left: -4px;
+    transition: 0.5s ease-in;
+  }
+  .third {
+    opacity: 0;
+    transition-delay: 0.5s;
+  }
+  .fourth {
+    opacity: 0;
+    transition-delay: 0.5s;
+  }
+  .fifth {
+    transform: rotate(-45deg);
+    top: -1px;
+    left: 4px;
+    transition: 0.5s ease-in;
+  }
+  .sixth {
+    transform: rotate(45deg);
+    top: -1px;
+    left: -4px;
+    transition: 0.5s ease-in;
+  }
+}
+.section-about-animation {
+  .text-wrap {
+    .text {
+      transition: 0.5s linear;
+      left: 0;
+    }
+  }
+}
+.slide-bottom-technology {
+  top: 0;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition-duration: 1s;
+}
+@keyframes implode {
+  100% {transform: scale(0)}
+}

@@ -1,0 +1,57 @@
+.section-about {
+  .text-wrap {
+    overflow: hidden;
+    padding: 0 0 4px 9px;
+  }
+  .text {
+    position: relative;
+    left: 155%;
+    font-size: 45px;
+    &:hover {
+      color: $red;
+      transition-duration: 0.25s;
+    }
+  }
+  .special-text {
+    font-weight: 700;
+    color: $red;
+  }
+  @include breakpoint(phone) {
+    .text {
+      font-size: 25px;
+    }
+  }
+}
+.intro-text {
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 0 5% -14px;
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
+}
+.education {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 0 28%;
+  .simple-wrap {
+    position: relative;
+    left: 101%;
+    width: 70%;
+  }
+  @include breakpoint(tablet) {
+    .simple-wrap {
+      width: 100%;
+    }
+  }
+}
+.education-text {
+  font-size: 25px;
+  line-height: 27px;
+  @include breakpoint(phone) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
